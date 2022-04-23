@@ -1,0 +1,58 @@
+*{
+    background-color: rgb(41, 40, 40);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size:30px;
+    color: rgb(217,189,149);
+}
+
+ol { 
+    counter-reset: item;
+    list-style-type: none;
+}
+li { 
+    display: block; 
+    color: rgb(127, 110, 99);
+    padding-bottom: 0.5%;
+}
+
+p{
+    white-space: pre-wrap;
+}
+
+li:before { 
+    content: counter(item) "  "; 
+    counter-increment: item 
+}
+
+.dataType{
+    color: rgb(107,176,163)
+}
+
+.keyword, .include{
+    color: rgb(255, 93, 93);
+}
+
+.integer, .float, .hex, .exp, .binary{
+    color: rgb(226 , 129, 155);
+}
+
+.string{
+    color: rgb(226,163,78);
+}
+
+.punctuators, .header{
+    color: rgb(243,129,67)
+}
+
+.function{
+    color: rgb(164, 182, 95);
+}
+
+.function::first-letter{
+    color: red;
+    /* color: rgb(217,189,149); */
+}
+
+.comment, .commentm{
+    color: rgb(149, 130, 115);
+}
